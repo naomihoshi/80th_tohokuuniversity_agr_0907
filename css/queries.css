@@ -1,0 +1,63 @@
+/* ============================================
+   レスポンシブデザイン
+   ============================================ */
+
+/* タブレット以下 */
+@media (max-width: 768px) {
+  .hero-badge {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .donation-amount {
+    font-size: 2rem;
+  }
+  
+  .nav-link .material-icons {
+    display: none;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .floating-donate {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .floating-donate .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* スマートフォン */
+@media (max-width: 576px) {
+  .card-donation .card-header {
+    font-size: 1rem;
+  }
+  
+  .donation-amount {
+    font-size: 1.75rem;
+  }
+  
+  .hero-badge {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .section-title::after {
+    width: 60px;
+    height: 3px;
+  }
+}
+
+/* 大画面 */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
