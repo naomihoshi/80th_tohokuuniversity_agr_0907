@@ -569,7 +569,9 @@ a:has(.icon-card):hover {
 }
 
 
-/* ===== タイムライン ===== */
+/* ============================================
+   80周年記念事業 タイムライン
+   ============================================ */
 .timeline {
   display: flex;
   flex-wrap: nowrap;
@@ -602,30 +604,32 @@ a:has(.icon-card):hover {
   border-radius: 50%;
   margin: 0 auto 0.75rem;
   border: 2px solid #fff;
-  box-shadow: 0 0 0 2px currentColor;
+}
+
+/* 色を明示指定（テーマ側の継承・上書きを防止） */
+.timeline-dot-confirmed {
+  background-color: var(--primary-green) !important;
+  box-shadow: 0 0 0 2px var(--primary-green) !important;
+}
+
+.timeline-dot-adjusting {
+  background-color: #ffc107 !important;
+  box-shadow: 0 0 0 2px #ffc107 !important;
 }
 
 .timeline-card {
   font-size: 0.9rem;
 }
 
-/* ステータスバッジ */
-.badge-confirmed {
-  background-color: #1b6b3c;
-  color: #fff;
-}
-.badge-adjusting {
-  background-color: #f0ad4e;
-  color: #212529;
-}
-.badge-tba {
-  background-color: #6c757d;
-  color: #fff;
+/* カード見出しの文字色を明示指定（原因不明のピンク継承対策） */
+.timeline-card .card-title,
+.main-event-card .card-title {
+  color: var(--text-dark) !important;
 }
 
 /* メインイベント強調カード */
 .main-event-card {
-  border: 2px solid var(--bs-primary-green, #1b6b3c);
+  border: 2px solid var(--primary-green);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
@@ -653,3 +657,4 @@ a:has(.icon-card):hover {
     margin: 0.3rem 0 0;
   }
 }
+
