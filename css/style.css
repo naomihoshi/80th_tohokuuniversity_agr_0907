@@ -749,6 +749,12 @@ a:has(.icon-card):hover {
   max-width: 220px !important;
 }
 
+/* 開催終了カードの日付バッジ（落ち着いたブルーグレー） */
+.badge.bg-date-done {
+  background-color: #78909c !important;
+  color: #fff !important;
+}
+
 /* ============================================
    メインイベント（タイポグラフィ×写真ヒーロー型）
    ============================================ */
