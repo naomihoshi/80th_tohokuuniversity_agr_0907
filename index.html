@@ -321,32 +321,40 @@
 
 <!-- ===== メインイベント（タイポグラフィ×写真ヒーロー型） ===== -->
 <section id="main-event" class="py-5">
-  <h3 class="text-center mt-0 mb-4 h4">
-    <span class="material-icons align-middle" style="font-size:1.6rem;">stars</span>
-    80周年記念事業 メインイベント
-  </h3>
+  <div class="container">
+    <h3 class="text-center mt-0 mb-4 h4">
+      <span class="material-icons align-middle" style="font-size:1.6rem;">stars</span>
+      80周年記念事業 メインイベント
+    </h3>
+  </div>
 
   <div class="main-event-hero">
     <div class="main-event-hero-bg" style="background-image: url('img/event-main.jpg');"></div>
 
-    <div class="container position-relative">
-      <div class="row align-items-center gy-4">
+    <div class="container-fluid position-relative">
+      <div class="row main-event-row g-0 align-items-center">
 
         <!-- 左：テキスト -->
-        <div class="col-lg-6">
+        <div class="col-12 col-lg-6 main-event-text-col">
           <p class="main-event-label mb-2">
             80周年記念事業 <span class="slash">／</span>
           </p>
-          <h4 class="main-event-heading mb-4">メインイベント。</h4>
+          <h4 class="main-event-heading mb-3">
+            <span class="highlight-mark">メインイベント。</span>
+          </h4>
           <p class="main-event-desc mb-4">
             <span class="highlight-mark">2027年10月10日（日）</span><br>
-            東北大学農学部80周年の<span class="highlight-mark">メインイベント</span>を開催します。
+            東北大学農学部80周年のメインイベントを開催します。
           </p>
-          <span class="notice-badge bg-secondary">詳細は後日お知らせいたします</span>
+          <!-- 詳細ページ公開後は <a href="main-event-detail.html" class="main-event-more"> に変更してください -->
+          <span class="main-event-more">
+            <span class="material-icons">schedule</span>
+            詳細は後日お知らせいたします
+          </span>
         </div>
 
         <!-- 右：写真 -->
-        <div class="col-lg-6">
+        <div class="col-12 col-lg-6 main-event-photo-col">
           <div class="main-event-photo-wrap">
             <img src="img/event-main.jpg" alt="東北大学農学部80周年メインイベント" class="main-event-photo">
           </div>
@@ -356,7 +364,6 @@
     </div>
   </div>
 </section>
-
 <!-- 80年の歩み -->
 <section id="history" class="py-4">
   <div class="container">
