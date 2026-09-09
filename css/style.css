@@ -754,6 +754,11 @@ a:has(.icon-card):hover {
   margin: 0 auto 0.5rem;
 }
 
+/* 開催終了カードはアイコンもグレーに統一 */
+.timeline-card-done .card-body .material-icons {
+  color: #9e9e9e !important;
+}
+
 /* ============================================
    メインイベント（タイポグラフィ×写真ヒーロー型）
    ============================================ */
