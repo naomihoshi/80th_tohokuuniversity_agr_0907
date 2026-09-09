@@ -712,6 +712,15 @@ a:has(.icon-card):hover {
   gap: 0.35rem;
 }
 
+/* ============================================
+   開催終了：日付バッジのみ追加スタイル
+   （他のバッジ・要素には影響しません）
+   ============================================ */
+.timeline-badges .bg-date-done {
+  background-color: var(--status-done-gray) !important;
+  color: #fff !important;
+}
+
 /* メインイベント強調カード */
 .main-event-card {
   border: 2px solid var(--primary-green);
