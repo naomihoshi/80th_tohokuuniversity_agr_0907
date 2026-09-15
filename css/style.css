@@ -574,7 +574,7 @@ a:has(.icon-card):hover {
   padding: 1rem 0.5rem 2rem;
   position: relative;
   width: max-content;
-  margin: 0 auto;
+
 }
 
 .timeline-scroll {
