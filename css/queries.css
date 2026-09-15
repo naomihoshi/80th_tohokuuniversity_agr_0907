@@ -61,3 +61,17 @@
     max-width: 1320px;
   }
 }
+
+/* ===== ヘッダー画像 高さ 画面幅ごとの調整(80周年記念) ===== */
+@media (min-width: 576px) {
+  .jumbotron-fluid { height: 260px; }
+}
+@media (min-width: 768px) {
+  .jumbotron-fluid { height: 320px; }
+}
+@media (min-width: 992px) {
+  .jumbotron-fluid { height: 380px; }
+}
+@media (min-width: 1200px) {
+  .jumbotron-fluid { height: 420px; }
+}
