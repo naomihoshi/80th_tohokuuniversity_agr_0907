@@ -570,15 +570,13 @@ a:has(.icon-card):hover {
 .timeline {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto;
   gap: 1.5rem;
   padding: 1rem 0.5rem 2rem;
   position: relative;
-　width: max-content;   /* fit-content + overflow-x から変更 */
+  width: max-content;
   margin: 0 auto;
 }
 
-/* 新規追加:スクロール担当を分離 */
 .timeline-scroll {
   overflow-x: auto;
   width: 100%;
@@ -737,10 +735,14 @@ a:has(.icon-card):hover {
 
 /* モバイルでは縦タイムラインに */
 @media (max-width: 767.98px) {
-  .timeline {
-    flex-direction: column;
+  .timeline-scroll {
     overflow-x: visible;
   }
+  .timeline {
+    flex-direction: column;
+    width: 100%;
+  }
+}
   .timeline::before {
     top: 0;
     bottom: 0;
