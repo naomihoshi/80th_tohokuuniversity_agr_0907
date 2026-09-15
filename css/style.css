@@ -742,7 +742,7 @@ a:has(.icon-card):hover {
     flex-direction: column;
     width: 100%;
   }
-}
+
   .timeline::before {
     top: 0;
     bottom: 0;
