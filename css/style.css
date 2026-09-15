@@ -574,9 +574,14 @@ a:has(.icon-card):hover {
   gap: 1.5rem;
   padding: 1rem 0.5rem 2rem;
   position: relative;
-   width: fit-content;   /* 追加 */
-  max-width: 100%;       /* 追加 */
-  margin: 0 auto;        /* 追加 */
+　width: max-content;   /* fit-content + overflow-x から変更 */
+  margin: 0 auto;
+}
+
+/* 新規追加:スクロール担当を分離 */
+.timeline-scroll {
+  overflow-x: auto;
+  width: 100%;
 }
 
 .timeline::before {
