@@ -877,6 +877,6 @@ a:has(.icon-card):hover {
   width: 100%;
   height: 100%;
   object-fit: cover;         /* 高さいっぱいに収め、余分な幅は自動で切る */
-  object-position: center;   /* 切る位置は中央基準 */
+  object-position: left center;   /* 切る位置は中央基準 */
 }
 
