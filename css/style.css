@@ -859,3 +859,21 @@ a:has(.icon-card):hover {
     height: 220px;
   }
 }
+
+/* ===== ヘッダー画像 高さ固定化(80周年記念) ===== */
+.jumbotron-fluid {
+  position: relative;
+  overflow: hidden;      /* 画像の伸びすぎをここで止める */
+  width: 100%;
+  height: 220px;         /* スマホ用の初期高さ */
+}
+.jumbotron-fluid img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* 高さいっぱいに収め、余分な幅は自動で切る */
+  object-position: center;   /* 切る位置は中央基準 */
+}
+
